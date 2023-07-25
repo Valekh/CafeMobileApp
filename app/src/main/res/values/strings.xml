@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cotlin3</string>
+    <string name="subtitle">Бесконечно вкусный кофе</string>
+    <string name="cosmic_latte">Cosmic Latte</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

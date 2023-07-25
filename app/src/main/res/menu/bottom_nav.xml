@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Главная"
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:title="Меню"
+        android:id="@+id/menu"
+        android:icon="@drawable/baseline_fastfood_24"/>
+
+    <item
+        android:title="Карта"
+        android:icon="@drawable/baseline_location_on_24"
+        android:id="@+id/map"/>
+
+    <item
+        android:id="@+id/other"
+        android:icon="@drawable/baseline_more_horiz_24"
+        android:title="Ещё"/>
+
+    <item
+        android:title="Скидки"
+        android:icon="@drawable/baseline_discount_24"
+        android:id="@+id/discount"/>
+</menu>

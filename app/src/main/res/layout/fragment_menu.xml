@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5FCFF"
+    tools:context=".MainActivity">
+
+    <!-- Nested Scroll view -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Linear layout to contain 2 text view and button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/to_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="focusOnView"
+                android:text="Наше меню"
+                android:layout_marginLeft="40dp"
+                android:textSize="60sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Молочный кофе"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:layout_marginTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="239dp"
+                        android:layout_height="223dp"
+                        android:layout_marginStart="-30dp"
+                        card_view:srcCompat="@drawable/latte" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Капучино"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="180р"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="255dp"
+                        android:background="@drawable/plus_button"
+                        android:src="@drawable/baseline_add_24"
+                        android:contentDescription="TODO" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="8dp">
+
+                    <ImageView
+                        android:layout_width="239dp"
+                        android:layout_height="223dp"
+                        android:layout_marginStart="-30dp"
+                        card_view:srcCompat="@drawable/latte" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Латте"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="180р"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="255dp"
+                        android:background="@drawable/plus_button"
+                        android:src="@drawable/baseline_add_24"
+                        android:contentDescription="TODO" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="8dp">
+
+                    <ImageView
+                        android:layout_width="239dp"
+                        android:layout_height="223dp"
+                        android:layout_marginStart="-30dp"
+                        card_view:srcCompat="@drawable/latte" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Флэт Уайт"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="180р"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="255dp"
+                        android:background="@drawable/plus_button"
+                        android:src="@drawable/baseline_add_24"
+                        android:contentDescription="TODO" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="8dp">
+
+                    <ImageView
+                        android:layout_width="239dp"
+                        android:layout_height="223dp"
+                        android:layout_marginStart="-30dp"
+                        card_view:srcCompat="@drawable/latte" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Раф"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="180р"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="255dp"
+                        android:background="@drawable/plus_button"
+                        android:src="@drawable/baseline_add_24"
+                        android:contentDescription="TODO" />
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:layout_marginTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="8dp">
+
+                    <ImageView
+                        android:layout_width="239dp"
+                        android:layout_height="223dp"
+                        android:layout_marginStart="-30dp"
+                        card_view:srcCompat="@drawable/latte" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Лунго"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="180р"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="255dp"
+                        android:background="@drawable/plus_button"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/baseline_add_24" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="8dp">
+
+                    <ImageView
+                        android:layout_width="239dp"
+                        android:layout_height="223dp"
+                        android:layout_marginStart="-30dp"
+                        card_view:srcCompat="@drawable/latte" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Эспрессо"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="260dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="180р"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="135dp"
+                        android:layout_marginTop="255dp"
+                        android:background="@drawable/plus_button"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/baseline_add_24" />
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
